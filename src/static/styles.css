@@ -97,6 +97,10 @@ section h3 {
   gap: 8px;
 }
 
+.participants-list li::before {
+  display: none;
+}
+
 .participants-list li {
   display: flex;
   align-items: center;
@@ -130,6 +134,24 @@ section h3 {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  flex: 1;
+}
+
+/* delete button */
+.delete-btn {
+  background-color: #d32f2f;
+  color: white;
+  border: none;
+  padding: 4px 8px;
+  font-size: 14px;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  flex: 0 0 auto;
+}
+
+.delete-btn:hover {
+  background-color: #b71c1c;
 }
 
 /* fallback when no participants */
